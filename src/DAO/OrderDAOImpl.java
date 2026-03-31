@@ -15,7 +15,7 @@ public class OrderDAOImpl implements OrderDAO {
     public boolean createOrder(int userId, List<CartItem> cart) {
 
         if (cart == null || cart.isEmpty()) {
-            throw new RuntimeException("Cart is empty");
+            throw new RuntimeException("Gio hang rong");
         }
 
         String insertOrder =
